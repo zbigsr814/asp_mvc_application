@@ -1,0 +1,38 @@
+﻿@model PanstwoRecordModel
+
+<h1>Wyszukiwarka państw</h1>
+
+<hr />
+
+<div class="row">
+	<div class="col-6">
+
+		<div class="card">
+
+			<div class="card-header">
+				<h5>Wyszukaj</h5>
+			</div>
+
+			<div class="card-body">
+				<form asp-controller="PanstwaController" asp-action="Wyszukaj" method="post">
+
+					<div class="mb-3">
+						<label class="form-label">Nazwa panstwa</label>
+						<input asp-for=panstwo type="text" class="form-control" />
+					</div>
+
+					<div class="mb-3">
+						<button class="btn btn-primary" type="submit">Wyszukaj</button>
+					</div>
+
+				</form>
+			</div>
+
+			<div class="card-footer">
+			</div>
+
+		</div>
+
+
+	</div>
+</div>

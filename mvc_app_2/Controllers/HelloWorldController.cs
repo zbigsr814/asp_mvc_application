@@ -25,7 +25,7 @@ namespace mvc_app_2.Controllers
         }
 
         public string Hello()
-        {
+        {   // komentarz
             return "Whos there";
         }
     }
